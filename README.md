@@ -1,70 +1,83 @@
-**As a team we believe that we can hire in a more inclusive manner by just looking at your code.**
-
-To test our hypothesis we came up with this challenge for you to complete.
-
-**We don’t want to see your CV.**
-
-All you have to do is complete the test below for the chance to get hired at Aula on a 6 month Contract and win £6000 on top of your new job.
-
-**We don’t want you to waste your time.**
-
-Please do not participate in this test if you do not meet the hard requirements to qualify for the role.
-
-Our team can not hire you if you are not:
-* Located in a close timezone to the team, that means between GMT -5 and GMT +3.
-* Happy to accept a 6 month contract on a day rate between £350 and £500 a day (based on your experience and location).
-* An experienced coder with at least 3 years coding in Production in an Agile Scrum environment.
-
-[Learn more about working as a contractor](http://bit.ly/ContractAtAula) by checking this page out on our Open Access Handbook, [the Aula Brain](http://bit.ly/AulaBrain)
-
-## Now let's get started with the test
 
 ### Objective
 
-In a fictional world, Aula Education has branched into the music business and we have launched a new web application. However it has some problems and is lacking features. Your job is to work on the items described under Tasks
+In a fictional world, Aula Education has branched into the music business and we have launched a new web application. However it has some problems and is lacking features. This music app displays the top 100 songs based on the iTunes API and lets you search the results.
 
-### Brief
+### Design Preview
 
-Our music app displays the top 100 songs based on the iTunes API and lets you search the results.
 
-This code challenge allows you to choose your own path and lets you flaunt your creative panache and technical skills along the way.
-
-The test has a time limit. However, please don't feel the need to spend more than 2 hours total working on your solution. We encourage you follow the instructions carefully and try to keep things simple.
+![Design preview for the Aula](aula.png)
 
 ### Existing codebase
 
 * `frontend`: client side rendered React SPA.
 * `backend`: Express server skeleton that will come in handy for one of your tasks. The server connects to an in-memory MongoDB store to simulate the persistence layer of the application.
 
-### Tasks
 
-- Implement a favorite feature:
-  - Users can toggle songs/albums as favorite.
-  - Favorites persists across page refreshes.
-  - Favorites are fetched from and sent to the `backend` Express server via a REST API. The service should write to and read from the database. Don't worry about authentication or supporting multiple users here.
-- Allow users to play song previews directly from the app. The iTunes API already returns a preview.
-- At the moment, the UX is not fantastic, can you add loading, error and empty (no results) states?
-- Add automated tests. We recommend using Jest and React Testing Library.
+# Installation and Environment Setup ⚙︎ 
 
-Please walk us through your changes and thought process in a video screencast (max 5min). [Loom](https://www.loom.com/) is a pretty good tool for that. Feel free to turn your video off if you're more comfortable that way.
+**Clone the repository from [Github](https://github.com/pextech/aula-tunes.git).**
 
-Optional:
-- Is Redux the most appropriate way to manage state in an app of this size? Can you refactor state management to adopt more suitable solution?
-- The search feature is a bit slow, can you speed it up?
-- Surprise us! Add a feature you think would work well here.
+( You will need **Git** for this if you are running a Windows PC, Get it [HERE](https://git-scm.com/) )
 
-### Evaluation Criteria
+```
+git clone https://github.com/pextech/aula-tunes.git
+```
 
-- We're looking for you to demonstrate you can jump into an existing codebase and make changes with clean code.
-- Simplicity: is the solution appropriate for the complexity of the problem?
-- Completeness: were the instructions followed?
-- Correctness: does the functionality act in sensible, thought-out ways?
-- Testing: is the app adequately tested? Do tests depend on implementation? Do they cover behavior?
+**To Install all dependencies:** 🔧
 
-### CodeSubmit
+```
+npm install
+```
 
-Please organize, design, test and document your code, then push your changes to the master branch and finally submit your assignment!
 
-Good luck 🚀,
+**Now to start the app:**
 
-The Aula team.
+```
+npm run start
+```
+
+
+# Tools used
+
+- React **javascript UI library**
+- Material-UI: **css**
+- Redux: **State manager**
+- Docker: **Image/Container**
+- NGINX: **WEb container**
+
+# More Tools
+
+- ES6 Transpiler: **[Babel](babeljs.io)**
+<!-- - Deployment: **[Heroku](https://www.heroku.com)** and **[Netlify](https://www.netlify.com/)** -->
+
+- Deployment : **Github-Pages**
+<!-- - link to the app: **[link](https://pextech.github.io/Front-end-dutygenerator/)** -->
+
+# Contribute
+
+If you ever have an idea on how you might help improve the app, you are welcome to contribute your changes to the repository, Just follow the steps below:
+
+Assumming you have the repo cloned on your PC,
+
+- Pull the latest changes from the remote repo by running:
+
+```
+git pull origin develop
+```
+
+NB: You need to be on the develop branch when you do this
+
+- Create & switch to the new branch where you will add your changes by running:
+
+```
+git checkout -b `yournewbranchname`
+```
+
+- After adding your changes, commit and push them to create a pull request against the develop branch. I will review and merge them if they are helpful.
+
+
+# Author 
+
+` Pextech 😎🇷🇼 `
+
